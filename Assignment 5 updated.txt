@@ -1,0 +1,12 @@
+3-
+muscle -in infile.fasta -seqtype protein -maxiters 16 -maxmb 30000000 -hydro 5 -hydrofactor 1.2 -log logfile.txt -weight1 clustalw -distance1 kmer6_6 -cluster1 upgmb -sueff 0.1 -root1 pseudo -maxtrees 1 -weight2 clustalw -distance2 pctidkimura -cluster2 upgmb -sueff 0.1 -root2 pseudo -objscore sp -noanchors -fastaout output.fasta
+
+raxmlHPC-PTHREADS-AVX2 -T 2 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s input.fasta -n output.newick
+
+4- 
+S. australis, D. viridis, C. sphinx, E. wahlbergi, R. leschenaultii
+
+5- 
+ACE2 is an important protein since SARS-CoV viruses utelize it to penetarate their host.
+Knowing the evolution and similarities between the ACE2 protein within families of bats can help us understand the evolution of viruses as the coevolve. 
+It can eventually help with vaccine and drug development as well.
